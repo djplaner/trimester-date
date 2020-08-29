@@ -1,11 +1,11 @@
 # \<trimester-date>
 
-Modifies a 
+Modifies the following
 ```html
 <trimester-date>Tuesday, Week 3</trimester-date>
 ```
 
-to include a specific date - e.g. ```Tuesday, Week 3 (28 July 2020)```.
+to include a specific date when displayed- e.g. ```Tuesday, Week 3 (28 July 2020)``` based on the calendar for a specific trimester.
 
 ## Current Status
 
