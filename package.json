@@ -1,5 +1,5 @@
 {
-  "name": "trimester-date",
+  "name": "@djplaner/trimester-date",
   "version": "0.0.0",
   "description": "Webcomponent trimester-date following open-wc recommendations",
   "author": "trimester-date",
@@ -15,5 +15,13 @@
   },
   "devDependencies": {
     "es-dev-server": "^1.57.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djplaner/trimester-date.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djplaner/trimester-date/issues"
+  },
+  "homepage": "https://github.com/djplaner/trimester-date#readme"
 }

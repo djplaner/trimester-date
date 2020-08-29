@@ -1,5 +1,21 @@
 # \<trimester-date>
 
+Modifies a 
+```html
+<trimester-date>Tuesday, Week 3</trimester-date>
+```
+
+to include a specific date - e.g. ```Tuesday, Week 3 (28 July 2020)```.
+
+## Current Status
+
+This version 0 release is an initial foray into Web components. It has limitations, including (but not limited to)
+
+- hard-coded to the calendar of a particular University;
+- hard-coded default trimester;
+- limited testing and validation; and,
+- no automated detection of the trimester from the LMS course site.
+
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ## Installation
@@ -13,10 +29,19 @@ npm i trimester-date
   import 'trimester-date/trimester-date.js';
 </script>
 
-<trimester-date></trimester-date>
+<trimester-date>Monday, Week 5</trimester-date>
+<trimester-date trimester="3201">Monday, Week 5</trimester-date>
+
 ```
 
+Element content should be a generic day/week using this format
+> *DayName*, Week *WeekNum*
+where 
 
+- *DayName* - is a partial (mon, tue, wed) or full (monday, tuesday, wednesday) name of the day - case insensitive
+- *WeekNum* - an integer matching a week in the University trimester (study period)
+
+The ```trimester``` attribute can be used to specify a particular trimester to use for date calculation. There is a default trimester hard-coded into the component.
 
 ## Tooling configs
 

@@ -1,7 +1,7 @@
 import { html, css, LitElement } from 'lit-element';
-import calendar from './calendar.js'
+import calendar from './calendar.js';
 
-const CURRENT_TRIMESTER = '3205'
+const CURRENT_TRIMESTER = '3205';
 
 export class TrimesterDate extends LitElement {
 /*  static get styles() {
@@ -67,7 +67,7 @@ export class TrimesterDate extends LitElement {
   //   date for matching that study period
   // - weeks start on Monday
   getTermDate(week, dayOfWeek='Monday') {
-    dayOfWeek = dayOfWeek.toLowerCase()
+    dayOfWeek = dayOfWeek.toLowerCase();
     let start;
 
     // if the week is not within the term return empty string
