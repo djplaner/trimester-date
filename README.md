@@ -36,6 +36,7 @@ npm i trimester-date
 
 Element content should be a generic day/week using this format
 > *DayName*, Week *WeekNum*
+
 where 
 
 - *DayName* - is a partial (mon, tue, wed) or full (monday, tuesday, wednesday) name of the day - case insensitive
